@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+
+.About{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: cadetblue;
+    background: #f3f0f1;
+}
+
+.aboutContainer{
+    display: flex;
+    height: 75%;
+    width: 90%;
+    margin-bottom: 55px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* left container sytling */
+.aboutLeftContainer{    
+    background: #f3f0f1;
+    flex: 0.55;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: -16px -16px 30px white,10px 10px 30px rgba(88, 88, 88, 0.274);
+}
+.aboutLeftContainer > h1{
+    font-family: 'Merienda', 'cursive';
+    font-size: 35px;
+    display: inline;
+    color: coral;
+}
+.firstPara,.secondPara{    
+    font-family: 'Dosis', sans-serif;
+    text-shadow: 1px 1px white;
+    font-size: 24px;
+}
+
+/* right container styling */
+.aboutRightContainer{
+    flex: 0.42;
+    display: flex;
+    flex-direction: column;
+}
+.innerTileContainer{
+    display: flex;
+    flex: 0.5;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.aboutusTile{
+    flex: 0.45;   
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px white,10px 10px 23px rgba(88, 88, 88, 0.274);
+}
+.tileImgContainer{
+    flex: 0.7;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+.tileContentContainer{
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+        
+}
+.tileContentContainer > h3{
+    font-family: 'Comfortaa', 'cursive';
+}
+.tileContentContainer > p{
+    font-family: 'Dosis', 'sans-serif';
+}

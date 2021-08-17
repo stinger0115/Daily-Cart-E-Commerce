@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.ProductTile{
+    background: #f3f0f1;
+    height: 60vh;
+    width: 30vh;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+    box-shadow: -6px -6px 7px white,9px 9px 10px rgba(88, 88, 88, 0.315);  
+    transition: all 0.55s ease-in;
+}
+.ProductTile:hover{
+    box-shadow: -6px -6px 7px rgba(88, 88, 88, 0.15),9px 9px 10px white;  
+}
+/* IMG CONTAINER STYLING */
+.productTileImgContainer{
+    flex: 0.60;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.productTileImgContainer > img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+/* for setting position absolute you need to set position relative of the parent container */
+.overlayContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(73, 73, 73, 0.50);
+    opacity: 0;
+    backdrop-filter: blur(8px);
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    transition: all 0.55s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlayContainer > p{
+    height: 50%;
+    width: 100%;
+    overflow: scroll;
+    text-align: center;
+}
+.overlayContainer > p::-webkit-scrollbar{
+    display: none;
+}
+.overlayContainer:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+/* CONTENT CONTAINER STYLING */
+.ProductTileContentContainer{
+    flex: 0.38;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;    
+}
+/* price container styling */
+.priceContainer{
+    width: 100%;
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Roboto Slab', serif;
+}
+.priceInnerContainer{
+    flex: 0.35;    
+    color: #404040;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 2px;    
+    padding-left: 8px;
+    border-radius: 25px;
+    box-shadow: inset 2px 2px 3px #BABECC, inset -2px -2px 3px #FFF;
+}
+.priceInnerContainer > p{
+    line-height: 30px;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* quantity container styling */
+.quantityButtonsContainer{
+    flex: 0.25;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.quantityButton{
+    flex: 0.35;
+    border-radius: 10px;
+    border: none;    
+    box-shadow: -6px -6px 8px white,5px 5px 5px rgba(88, 88, 88, 0.300);
+    transition: all 0.5s ease-in-out;
+}
+.quantityButton:hover{
+    cursor: pointer;
+    background-color: rgba(133, 147, 161, 0.247);
+    box-shadow: -2px -2px 2px white,2px 2px 2px white;
+}

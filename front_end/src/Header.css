@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+
+.Header{
+    font-family: 'Comfortaa', 'cursive';
+    display: flex;    
+    background: #f3f0f1;
+    position: fixed;
+    width: 100vw;
+}
+
+/* styling of the logo and heading */
+.logoContainer{
+    flex: 0.2;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+
+/* styling of the links to pages */
+.linksContainer{
+    flex: 0.6;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.links{
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-radius: 10px;
+    box-shadow: -6px -6px 10px white,4px 4px 5px rgba(88, 88, 88, 0.15);
+    background: #f3f0f1;
+    color: #E47158;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links:hover{
+    transform: scale(1.05);    
+}
+/* Navlink gets by default active class by react router dom */
+.active{
+    box-shadow: inset 2px 2px 3px #BABECC, inset -2px -2px 3px #FFF;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    color: rgb(238, 70, 40);
+    background: #f3f0f1;
+}
+
+/* styling of the login and signup buttons */
+.accountContainer{
+    flex: 0.20;
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.accountDetailContainer{
+    overflow: hidden;
+    padding: 3px;    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accountDetailContainer > p{
+    flex: 0.85;    
+    font-size: 14px;
+    width: 20ch;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.singOut{    
+    border: none;
+    font-size: 14px;
+}
+.singOut:hover{
+    cursor: pointer;
+}
+.cartContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartIcon{
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-radius: 10px;
+    box-shadow: -6px -6px 10px white,4px 4px 5px rgba(88, 88, 88, 0.15);
+    background: #f3f0f1;
+    color: black;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+}
+.dot{
+    height: 7px;
+    width: 7px;
+    background-color: red;
+    border-radius: 50%;
+}

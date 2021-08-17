@@ -1,0 +1,28 @@
+.Categories{        
+    width: 90%;
+    height:90%;
+}
+
+.categoriesInnerContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.shortcutBtn{
+    padding: 7px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Roboto Slab', serif;
+    background-color: #585858;
+    color: white;
+    box-shadow: -3px -3px 5px #707070,3px 3px 5px #707070;
+}
+.shortcutBtn:hover{
+    cursor: pointer;
+    color: rgb(185, 184, 184);
+}
