@@ -1,0 +1,126 @@
+
+.CartList{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #f3f0f1;
+    box-shadow: -6px -6px 8px white,4px 4px 8px rgba(88, 88, 88, 0.308);
+    transition: all 0.45s ease-in;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.CartList:hover{
+    cursor: pointer;
+    box-shadow: inset 3px 3px 6px #BABECC, inset -4px -4px 7px #FFF;
+}
+
+/* img container styling */
+.cartProductImgContainer{
+    flex: 0.2;
+    height: 100%;
+    width: 100%;    
+    overflow: hidden;    
+    display: flex;        
+    justify-content: center;
+    align-items: center;
+}
+.cartProductImgContainer > img{    
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover;  
+}
+
+
+/* info container styling */
+.cartProductInfoContainer{
+    flex: 0.75;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;    
+    color: rgb(68, 67, 67);    
+    display: flex;
+    flex-direction: column;
+}
+
+/* product name details container styling */
+.productDetailsCartContainer{
+    flex: 0.5;  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.productNameCart{
+    flex: 0.78;
+    font-size: 18px;
+    font-family: 'Comfortaa', 'cursive'; 
+}
+.brandNameCart{
+    flex: 0.2;
+    font-size: 13px;
+    font-style: italic;
+    font-family: 'Roboto Slab', serif;
+    color: grey;
+}
+
+/* product pricing and quantity container styling */
+.productQuantityPricingContainer{
+    flex: 0.2;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.productCartPrice{
+    flex: 0.5;
+    font-size: 15px;
+    font-family: 'Comfortaa', 'cursive';  
+}
+
+.productCartQuantity{
+    flex: 0.5;
+    font-size: 15px;
+    font-family: 'Comfortaa', 'cursive';  
+}
+
+/* cart list buttons styling */
+.productCartButtons{
+    flex: 0.2; 
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartListBtn{
+    flex: 0.25;
+    padding-top:4px;
+    padding-bottom:2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;    
+    border: none;
+    border-radius: 5px;    
+    box-shadow: -6px -6px 8px white,4px 4px 5px rgba(88, 88, 88, 0.308);
+}
+
+.cartListBtn:hover{
+    cursor: pointer;
+    box-shadow: inset 2px 2px 3px #BABECC, inset -2px -2px 3px #FFF;
+}

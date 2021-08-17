@@ -1,0 +1,124 @@
+.LoginPage{
+    background: #f3f0f1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comfortaa', 'cursive';
+    color: #61677C;
+}
+
+/* styling of the loginpage content container */
+.loginContainer{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: -16px -16px 30px white,14px 14px 45px rgba(88, 88, 88, 0.274);
+    border-radius: 10px;
+}
+
+/* left container styling */
+.containerLeft{
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-image:url('https://i.pinimg.com/originals/c5/79/74/c579747cc72e3c378a63aad92cdbeb2e.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    color: black;
+}
+.contentContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+}
+.p1{
+    font-size: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.p2{
+    font-size: 20px;
+    padding:10px;
+    text-align: center;
+}
+
+/* right container styling */
+.containerRight{
+    flex: 0.6;
+    /* background-color: darkkhaki; */    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;    
+}
+/* login heading styline */
+.pageHeading {
+    margin-bottom: 50px;
+    font-size:33px;
+    border-bottom: 2px solid #E47158;
+}
+
+/* form styling */
+.containerRight > form{    
+    display: flex;
+    flex-direction: column;    
+    width: 60%;
+}
+input:focus{
+    outline:none;
+}
+
+.inputLabels{    
+	font-size: 20px;
+    letter-spacing: 0.07em;
+}
+
+.containerRight > form > input{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    border-radius: 25px;
+    border: 2px solid white;
+    /* box-shadow: -6px -6px 10px white,4px 4px 10px rgba(88, 88, 88, 0.15);     */
+    box-shadow: inset 2px 2px 3px #BABECC, inset -2px -2px 3px #FFF;
+}
+::placeholder{
+    font-size: 13px;
+    font-family: 'Comfortaa', 'cursive';    
+    letter-spacing: 0.07em;
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.submitBtn{
+    width: 70%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    border-radius: 25px;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    color: #E47158;
+    box-shadow:  3px 3px 5px #BABECC,  -4px -4px 10px #FFF;
+    border:none;
+    transition: all 0.5s ease-in-out;
+}
+.submitBtn:hover{
+    cursor: pointer;
+    background-color: #E47158;
+    color: white;
+}

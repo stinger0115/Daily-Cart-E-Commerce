@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.contactPage{
+    background-color: cadetblue;   
+    background: #f3f0f1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+}
+
+.contactContainer{
+    margin-bottom: 40px;
+    padding: 10px;
+    background-color: coral;
+    background: #f3f0f1;
+    height: 80%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+/*LEFT CONTAINER */
+.contactLeftContainer{
+    flex: 0.48;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* first container of left container styling */
+.socialLinksContainer{
+    flex: 0.3;
+    background: #f3f0f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.socialLinksInnerContainer{
+    flex: 0.29;
+    display: flex;
+    justify-content: space-between;
+}
+.firstLink{
+    flex: 0.48;
+    background: #f3f0f1;
+    border-radius: 25px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: -5px -5px 8px white,4px 4px 5px rgba(88, 88, 88, 0.15);
+}
+.iconContainer{
+    flex: 0.1;
+    box-shadow: inset 2px 2px 3px #BABECC, inset -2px -2px 3px #FFF;
+    padding: 5px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.firstLink > a{
+    flex: 0.8;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    text-shadow: 1px 1px white;
+}
+/* second container of left container styling */
+.hoursContainer{
+    flex: 0.25;
+    background: #f3f0f1;
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    box-shadow: -5px -5px 8px white,8px 8px 15px rgba(88, 88, 88, 0.15);
+    border-radius: 5px;
+    text-shadow: 1px 1px white;
+}
+.callingContainer{
+    background-image: linear-gradient(black 33%, rgba(255,255,255,0) 0%);
+    background-position: right;
+    background-size: 2px 16px;
+    background-repeat: repeat-y;
+}
+.innerHoursContainer{
+    flex: 0.49;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.timingHeading{
+    font-size: 20px;
+    font-family: 'Comfortaa', 'cursive';
+}
+.daysHeading{
+    font-size: 16px;
+}
+.timeHeading{
+    font-size: 13px;
+    font-family: 'Dosis', 'sans-serif';
+}
+/* third container of left container styling*/
+.officeContainer{
+    flex: 0.35;    
+    display: flex;
+    box-shadow: -5px -5px 8px white,8px 8px 15px rgba(88, 88, 88, 0.15);
+    text-shadow: 1px 1px white;
+}
+.buildingLogoContainer{
+    flex: 0.4;
+    color: rgb(107, 129, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addressContainer{
+    flex: 0.6;    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.addressHeading{
+    flex: 0.1;
+    font-size: 18px;
+    font-family: 'Comfortaa', 'cursive';
+    border-bottom: 1px solid coral;
+}
+.streetAddress{
+    flex: 0.82;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Dosis', 'sans-serif';
+}
+/*RIGHT CONTAINER*/
+.contactRightContainer{
+    flex: 0.48;
+    box-shadow: -8px -8px 10px white,10px 10px 25px rgba(88, 88, 88, 0.15);
+    border-radius: 10px;
+    color: lightslategrey;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+}
+.contactRightContainer > p{
+    flex: 0.15;
+    font-size: 40px;    
+    font-family: 'Comfortaa', 'cursive';
+}
+.contactRightContainer >p::after{
+    background: #f1991b;
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 25%;    
+}
+.contactFormContainer{
+    flex: 0.85;
+    padding: 20px;
+    width: 100%;
+}
+textarea{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: inset 2px 2px 3px #BABECC, inset -2px -2px 3px #FFF;
+}
